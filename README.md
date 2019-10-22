@@ -26,7 +26,7 @@ Dr. Patrick Pennefather | Assistant Professor, UBC Theatre and Film
 As of now, the student team has eight members.
 
 - [Atif Mahmud](https://www.linkedin.com/in/atifmmahmud/) | Technical Lead and Project Coordinator
-- [Tasha Coote] (https://www.linkedin.com/in/tasha-coote-1b804597/) | Design, Accessibilty, and PM 
+- [Tasha Coote](https://www.linkedin.com/in/tasha-coote-1b804597/) | Design, Accessibilty, and PM 
 - Brant Yin | Software Development
 - [Manu Koipallil](https://www.linkedin.com/in/manu-koipallil/) | Software Development 
 - Michelle Huynh | Software Development 
