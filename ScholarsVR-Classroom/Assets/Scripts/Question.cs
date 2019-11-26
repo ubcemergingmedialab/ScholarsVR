@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/// </summary>
+/// A ScriptableObject for multiple-choice question
+/// with 4 choices
+/// </summary>
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +16,10 @@ public class Question : ScriptableObject
     public string optionD = "";
     public int correctAnswer = 0;
 
-    public Question(string body, string optionA, string optionB, 
+    /// <summary>
+    /// Set the question body, options and correct answer
+    /// </summary>
+    public void setQuestion(string body, string optionA, string optionB, 
                     string optionC, string optionD, int correctAnswer)
     {
         this.body = body;

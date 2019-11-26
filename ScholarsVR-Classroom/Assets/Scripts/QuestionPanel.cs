@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// A question panel that can display a multiple-choice question
+/// with 4 choices
+/// </summary>
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,17 +25,28 @@ public class QuestionPanel : MonoBehaviour
     public Button buttonC;
     public Button buttonD;
 
+    /// <summary>
+    /// create a new question, and display it
+    /// <summary>
     private void Start()
     {
         answerCorrect = false;
 
-        question = 
-            new Question("Hi, this is a question, the third option is correct", 
-                        "Here is the first option", 
-                        "Here is the second option", 
-                        "Here is the third option", 
-                        "Here is the fourth option", 
-                        2);
+        question = (Question) ScriptableObject.CreateInstance("Question");
+
+        // Change here to change the question
+        // "Question body"
+        // "Option A"
+        // "Option B"
+        // "Option C"
+        // "Option D"
+        // Correct answer, 0 = A, 1 = B, 2 = C, 3 = D
+        question.setQuestion("Hi, this is a question, the third option is correct", 
+                            "Here is the first option", 
+                            "Here is the second option", 
+                            "Here is the third option", 
+                            "Here is the fourth option", 
+                            2);
         
         body.text = question.body;
         optionA.text = question.optionA;
@@ -41,6 +57,10 @@ public class QuestionPanel : MonoBehaviour
         SetDisabledColor();
     }
 
+    /// <summary>
+    /// Called when option A is clicked
+    /// If correct, disable the buttons, increase score
+    /// </summary>
     public void SelectA() {
         if (!answerCorrect) {
             if (question.correctAnswer == 0) {
@@ -51,6 +71,10 @@ public class QuestionPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when option B is clicked
+    /// If correct, disable the buttons, increase score
+    /// </summary>
     public void SelectB() {
         if (!answerCorrect) {
             if (question.correctAnswer == 1) {
@@ -61,6 +85,10 @@ public class QuestionPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when option C is clicked
+    /// If correct, disable the buttons, increase score
+    /// </summary>
     public void SelectC() {
         if (!answerCorrect) {
             if (question.correctAnswer == 2) {
@@ -71,6 +99,10 @@ public class QuestionPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when option D is clicked
+    /// If correct, disable the buttons, increase score
+    /// </summary>
     public void SelectD() {
         if (!answerCorrect) {
             if (question.correctAnswer == 3) {
@@ -81,6 +113,10 @@ public class QuestionPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Set colors for buttons when they are disabled,
+    /// based on the correct answer
+    /// </summary>
     private void SetDisabledColor()
     {   
         ColorBlock colors = buttonA.colors;
@@ -99,7 +135,10 @@ public class QuestionPanel : MonoBehaviour
         colors.disabledColor = question.correctAnswer == 3 ? Color.green : Color.red;    
         buttonD.colors = colors;  
     }
-
+    
+    /// <summary>
+    /// Disable buttons
+    /// </summary>
     private void DisableButtons() 
     {
         buttonA.interactable = false;
@@ -108,6 +147,10 @@ public class QuestionPanel : MonoBehaviour
         buttonD.interactable = false;
     }
 
+    /// <summary>
+    /// Enable all the buttons
+    /// Not used in test scene, but can be useful
+    /// </summary>
     public void resetButtons() 
     {
         buttonA.interactable = true;
