@@ -67,6 +67,8 @@ public class QuestionPanel : MonoBehaviour
                 answerCorrect = true;
                 DisableButtons();
                 score++;
+            } else {
+                // Code to run when the answer is not correct
             }
         }
     }
@@ -81,6 +83,8 @@ public class QuestionPanel : MonoBehaviour
                 answerCorrect = true;
                 DisableButtons();
                 score++;
+            } else {
+                // Code to run when the answer is not correct
             }
         }
     }
@@ -95,6 +99,8 @@ public class QuestionPanel : MonoBehaviour
                 answerCorrect = true;
                 DisableButtons();
                 score++;
+            } else {
+                // Code to run when the answer is not correct
             }
         }
     }
@@ -109,6 +115,8 @@ public class QuestionPanel : MonoBehaviour
                 answerCorrect = true;
                 DisableButtons();
                 score++;
+            } else {
+                // Code to run when the answer is not correct
             }
         }
     }
