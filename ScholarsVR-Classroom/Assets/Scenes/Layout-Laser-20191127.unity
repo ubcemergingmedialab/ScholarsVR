@@ -1887,6 +1887,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0968fe08cc995be46953ce2ddc49bab2, type: 3}
+--- !u!1 &1079180845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6647618646484288880, guid: ff112f8d02ec38541a4334b0058b197f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648914421667783049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1079180851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079180845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacbb2b3dbcb77447bf2d66802fa0404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1079180852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079180845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501eb8b744f73714fbe7dbdd5e3ef66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInGaze: 0
+  gazeInCutoff: 0.15
+  gazeOutCutoff: 0.4
 --- !u!1001 &1273060986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2367,6 +2400,24 @@ Transform:
   m_Father: {fileID: 930590908}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
+--- !u!1 &1875531847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6647618646688175104, guid: ff112f8d02ec38541a4334b0058b197f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648914421667783049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1875531853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875531847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacbb2b3dbcb77447bf2d66802fa0404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1888318278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 529891a3e61cbc040b64d23184f9bda5,
@@ -2909,9 +2960,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5006512735938724252}
   - component: {fileID: 8296172668052190096}
+  - component: {fileID: 8296172668052190097}
   m_Layer: 0
-  m_Name: Teacher_01
-  m_TagString: Untagged
+  m_Name: Prof
+  m_TagString: Prof
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3012,3 +3064,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &8296172668052190097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668052190095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
