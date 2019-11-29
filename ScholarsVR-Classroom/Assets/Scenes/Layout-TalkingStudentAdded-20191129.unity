@@ -256,6 +256,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25325597}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &65788382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6648914421460520645, guid: ff112f8d02ec38541a4334b0058b197f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648914421667783049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &65788384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65788382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e095dfd2415e545b9cf2aa656b7f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  right_controller: 2
+  left_controller: 1
 --- !u!1001 &76205933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -489,6 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   right_controller: 2
   left_controller: 1
+  controller: {fileID: 322646279}
 --- !u!65 &131805027
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -556,8 +577,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131805025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.008, y: -110.702, z: -48.43}
-  m_LocalScale: {x: 0.31122, y: 0.31122, z: 0.31122}
+  m_LocalPosition: {x: 13.594, y: -110.365, z: -48.538}
+  m_LocalScale: {x: 0.060358003, y: 0.060358003, z: 0.060358003}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -733,6 +754,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9fc0d71b887244b84efb097ef2f841, type: 3}
+--- !u!1 &322646279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6648914420030366152, guid: ff112f8d02ec38541a4334b0058b197f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648914421667783049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &360271208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
@@ -2293,10 +2320,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 930590908}
     m_Modifications:
-    - target: {fileID: 1968476592218994, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
-      propertyPath: m_Name
-      value: MaleFree1
-      objectReference: {fileID: 0}
     - target: {fileID: 4889916270699016, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.613611
@@ -2353,8 +2376,32 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5428281
       objectReference: {fileID: 0}
+    - target: {fileID: 1968476592218994, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
+      propertyPath: m_Name
+      value: MaleFree1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
+--- !u!1 &1591287768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6648914421460523089, guid: ff112f8d02ec38541a4334b0058b197f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6648914421667783049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1591287770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591287768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e095dfd2415e545b9cf2aa656b7f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  right_controller: 2
+  left_controller: 1
 --- !u!1001 &1657577756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2591,10 +2638,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 930590908}
     m_Modifications:
-    - target: {fileID: 1968476592218994, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
-      propertyPath: m_Name
-      value: TalkingStudent
-      objectReference: {fileID: 0}
     - target: {fileID: 4889916270699016, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.447
@@ -2650,6 +2693,10 @@ PrefabInstance:
     - target: {fileID: 4889916270699016, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.5428281
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968476592218994, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
+      propertyPath: m_Name
+      value: TalkingStudent
       objectReference: {fileID: 0}
     - target: {fileID: 4447174194096642, guid: 313ad0ef31f75b84f9f31c0528802fdd, type: 3}
       propertyPath: m_LocalRotation.x
