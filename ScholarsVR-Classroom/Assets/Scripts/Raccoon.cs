@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pencil : MonoBehaviour
+public class Raccoon : MonoBehaviour
 {
+    private static AudioSource audio;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -16,8 +18,8 @@ public class Pencil : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    public static void PlayAudio()
     {
-        Debug.Log("Clciked Pencil");
+        audio.Play();
     }
 }
