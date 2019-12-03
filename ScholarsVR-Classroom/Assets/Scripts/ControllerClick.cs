@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 25CBD4
 
 
 public class ControllerClick : MonoBehaviour
@@ -40,6 +41,27 @@ public class ControllerClick : MonoBehaviour
                 }
             }
             Prof.UndoHighlight();
+
+
+            if (hit.collider.CompareTag("Raccoon"))
+            {
+                //Prof.HighlightObject();
+                if (right_press)
+                {
+                    Raccoon.PlayAudio();
+                    Debug.Log("Raccoon Click");
+                }
+            }
+
+            if (hit.collider.CompareTag("TalkingStudent"))
+            {
+                //Prof.HighlightObject();
+                if (right_press)
+                {
+                    TalkingStudent.PlayAudio();
+                    Debug.Log("Student Click");
+                }
+            }
         }
     }
 }
