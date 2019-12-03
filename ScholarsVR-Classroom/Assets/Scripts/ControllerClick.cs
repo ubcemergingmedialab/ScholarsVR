@@ -22,21 +22,24 @@ public class ControllerClick : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        OVRInput.FixedUpdate();
 
+
+        OVRInput.FixedUpdate();
         right_press = OVRInput.Get(OVRInput.RawButton.RIndexTrigger);
         left_press = OVRInput.Get(OVRInput.RawButton.LIndexTrigger);
-
-
         RaycastHit hit;
 
         if (Physics.Raycast(controller.transform.position, controller.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
         {
             if (hit.collider.CompareTag("Prof"))
             {
-                //if (right_press)
+                Prof.HighlightObject();
+                if (right_press)
+                {
                     Debug.Log("Right Click on Prof");
+                }
             }
+            Prof.UndoHighlight();
         }
     }
 }
