@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class TalkingStudent : MonoBehaviour
+public class Eraser : MonoBehaviour
 {
     private static AudioSource audio;
 
@@ -15,13 +13,12 @@ public class TalkingStudent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public static void PlayAudio()
     {
         audio.Play();
-
     }
 
     public static void PauseAudio()
@@ -32,7 +29,7 @@ public class TalkingStudent : MonoBehaviour
     public static void PauseOthers()
     {
         Pencil.PauseAudio();
-        Eraser.PauseAudio();
+        TalkingStudent.PauseAudio();
         Raccoon.PauseAudio();
     }
 }
