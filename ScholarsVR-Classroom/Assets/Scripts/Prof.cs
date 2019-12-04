@@ -23,31 +23,4 @@ public class Prof : MonoBehaviour
     {
         
     }
-
-    public static void HighlightObject()
-    {
-        foreach (Material material in renderer.materials)
-        {
-            material.color = new Color(material.color.r, material.color.g, material.color.b + 20);
-        }
-
-        Debug.Log("Shader");
-        highlighted = true;
-    }
-
-    public static void UndoHighlight()
-    {
-        // Debug.Log("UNDO SHADER");
-        if (highlighted)
-        {
-            foreach (Material material in renderer.materials)
-            {
-                material.color = new Color(material.color.r, material.color.g, material.color.b - 20);
-
-            }
-        }
-
-        highlighted = false;
-
-    }
 }

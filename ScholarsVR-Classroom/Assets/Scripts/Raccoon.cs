@@ -22,4 +22,16 @@ public class Raccoon : MonoBehaviour
     {
         audio.Play();
     }
+
+    public static void PauseAudio()
+    {
+        audio.Pause();
+    }
+
+    public static void PauseOthers()
+    {
+        Pencil.PauseAudio();
+        TalkingStudent.PauseAudio();
+        Eraser.PauseAudio();
+    }
 }
