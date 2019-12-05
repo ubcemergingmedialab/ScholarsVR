@@ -41,12 +41,12 @@ public class QuestionPanel : MonoBehaviour
         // "Option C"
         // "Option D"
         // Correct answer, 0 = A, 1 = B, 2 = C, 3 = D
-        question.setQuestion("Hi, this is a question, the third option is correct", 
-                            "Here is the first option", 
-                            "Here is the second option", 
-                            "Here is the third option", 
-                            "Here is the fourth option", 
-                            2);
+        question.setQuestion("If a ship has 26 sheep and 10 goats, how old is the ship's captain?", 
+                            "49", 
+                            "51", 
+                            "69", 
+                            "Depends...", 
+                            3);
         
         body.text = question.body;
         optionA.text = question.optionA;
