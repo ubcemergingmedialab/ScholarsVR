@@ -9,6 +9,11 @@ TagManager:
   - TalkingStudent
   - Pencil
   - Eraser
+  - ButtonA
+  - ButtonB
+  - ButtonC
+  - ButonD
+  - ButtonD
   layers:
   - Default
   - TransparentFX

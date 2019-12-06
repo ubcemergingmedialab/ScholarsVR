@@ -69,6 +69,7 @@ public class QuestionPanel : MonoBehaviour
                 score++;
             } else {
                 // Code to run when the answer is not correct
+                DisableButtons();
             }
         }
     }
@@ -85,6 +86,7 @@ public class QuestionPanel : MonoBehaviour
                 score++;
             } else {
                 // Code to run when the answer is not correct
+                DisableButtons();
             }
         }
     }
@@ -101,6 +103,7 @@ public class QuestionPanel : MonoBehaviour
                 score++;
             } else {
                 // Code to run when the answer is not correct
+                DisableButtons();
             }
         }
     }
@@ -117,6 +120,7 @@ public class QuestionPanel : MonoBehaviour
                 score++;
             } else {
                 // Code to run when the answer is not correct
+                DisableButtons();
             }
         }
     }
@@ -126,7 +130,8 @@ public class QuestionPanel : MonoBehaviour
     /// based on the correct answer
     /// </summary>
     private void SetDisabledColor()
-    {   
+    {
+
         ColorBlock colors = buttonA.colors;
         colors.disabledColor = question.correctAnswer == 0 ? Color.green : Color.red;    
         buttonA.colors = colors;
