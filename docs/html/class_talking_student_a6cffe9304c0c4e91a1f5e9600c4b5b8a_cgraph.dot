@@ -1,0 +1,14 @@
+digraph "TalkingStudent.PauseOthers"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TalkingStudent.PauseOthers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Pencil.PauseAudio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pencil.html#ad5a0e38217b5415687af34751dda1850",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Eraser.PauseAudio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_eraser.html#a6bc9582dfb1aca576a39d87a463acbcc",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Raccoon.PauseAudio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_raccoon.html#a8d64c8ed2e3b490cd8732fba91b2f545",tooltip=" "];
+}
