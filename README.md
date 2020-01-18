@@ -1,5 +1,31 @@
 # ScholarsVR
 
+## Instructions
+
+### Step 1 
+
+Clone or download this repository
+
+### Step 2 
+
+Launch the project using Unity. The preferred version is 2019.2.10f1
+
+## Step 3
+
+Open the scene ["FINAL_ONLY-PRFO_20200117"](https://github.com/ubcemergingmedialab/ScholarsVR/tree/master/ScholarsVR-Classroom/Assets/Scenes)
+
+## Step 4
+
+Download the Audio file titled "Prof_v1.wav" from [this link](https://drive.google.com/drive/u/0/folders/136swIXGeg_FSGzpnPCFXalGgye7RHWkk)
+
+## Step 5
+
+Add this audio clip to the Audio Player component attached to the professor game object
+
+
+You're all set! Enjoy the VR experience!
+
+
 ## Project Information
 
 This project is a collaborative effort between UBC Emerging Media Lab,
