@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    bool profStartedTalking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,13 +16,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Prof.IsPlaying())
+        {
+            profStartedTalking = true;
+        }
+
+        SceneTransition();
     }
 
     void SetUp()
     {
         // setup things
         // call this function in Start()
+    }
+
+    void SceneTransition()
+    {
+        if (profStartedTalking && !Prof.IsPlaying())
+        {
+            SceneManager.LoadScene("Question", LoadSceneMode.Single);
+        }
     }
 
     void PencilClick()

@@ -573,25 +573,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 865725656472113735, guid: ff112f8d02ec38541a4334b0058b197f,
-        type: 3}
-      propertyPath: m_Name
-      value: VR_Manager
-      objectReference: {fileID: 0}
     - target: {fileID: 865725656472113737, guid: ff112f8d02ec38541a4334b0058b197f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.904106
+      value: 18.515
       objectReference: {fileID: 0}
     - target: {fileID: 865725656472113737, guid: ff112f8d02ec38541a4334b0058b197f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -110.197
+      value: -110.155
       objectReference: {fileID: 0}
     - target: {fileID: 865725656472113737, guid: ff112f8d02ec38541a4334b0058b197f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -47.782825
+      value: -47.796
       objectReference: {fileID: 0}
     - target: {fileID: 865725656472113737, guid: ff112f8d02ec38541a4334b0058b197f,
         type: 3}
@@ -652,6 +647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: right_controller
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 865725656472113735, guid: ff112f8d02ec38541a4334b0058b197f,
+        type: 3}
+      propertyPath: m_Name
+      value: VR_Manager
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 865725655601675418, guid: ff112f8d02ec38541a4334b0058b197f, type: 3}
@@ -1304,6 +1304,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 930590908}
     m_Modifications:
+    - target: {fileID: 4723423661827181645, guid: dcd1c27ebf2366c44941720ca6504d36,
+        type: 3}
+      propertyPath: m_Name
+      value: Question Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 4723423660332770704, guid: dcd1c27ebf2366c44941720ca6504d36,
         type: 3}
       propertyPath: m_TagString
@@ -1429,16 +1434,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4723423661827181645, guid: dcd1c27ebf2366c44941720ca6504d36,
-        type: 3}
-      propertyPath: m_Name
-      value: Question Canvas
-      objectReference: {fileID: 0}
     - target: {fileID: 4723423661827181687, guid: dcd1c27ebf2366c44941720ca6504d36,
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 427fd5f1cc2c2a94485ca55f884c817a, type: 3}
+      objectReference: {fileID: 8300000, guid: cb5a66eb4528b8e42aa3367ceb097a29, type: 3}
     - target: {fileID: 4723423661827181687, guid: dcd1c27ebf2366c44941720ca6504d36,
         type: 3}
       propertyPath: Loop
@@ -1833,6 +1833,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5006512735938724252}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
+        type: 3}
+      propertyPath: m_Name
+      value: ScholarsVR_Eyes_open
+      objectReference: {fileID: 0}
+    - target: {fileID: -8435568306975724407, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a397ad6fc378f49ba50d618bfb4e00, type: 2}
+    - target: {fileID: -6283877591383234665, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a397ad6fc378f49ba50d618bfb4e00, type: 2}
     - target: {fileID: -4216859302048453862, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1903,21 +1918,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.44836032
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
-        type: 3}
-      propertyPath: m_Name
-      value: ScholarsVR_Eyes_open
-      objectReference: {fileID: 0}
-    - target: {fileID: -8435568306975724407, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 48a397ad6fc378f49ba50d618bfb4e00, type: 2}
-    - target: {fileID: -6283877591383234665, guid: c0b5a485b8a760c4a90d676a9efe9e8a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 48a397ad6fc378f49ba50d618bfb4e00, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b5a485b8a760c4a90d676a9efe9e8a, type: 3}
 --- !u!4 &1448775661 stripped
