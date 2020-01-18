@@ -12,7 +12,7 @@ Launch the project using Unity. The preferred version is 2019.2.10f1
 
 ## Step 3
 
-Open the scene ["FINAL_ONLY-PRFO_20200117"](https://github.com/ubcemergingmedialab/ScholarsVR/tree/master/ScholarsVR-Classroom/Assets/Scenes)
+Open the scene ["FINAL_ONLY-PROF_20200117"](https://github.com/ubcemergingmedialab/ScholarsVR/tree/master/ScholarsVR-Classroom/Assets/Scenes)
 
 ## Step 4
 
